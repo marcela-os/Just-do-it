@@ -16,8 +16,42 @@ $neg-notification-dark: #DE5252;
 
 
 /* Font sizes */
+$title-font-size: 22px;
 $paragraph-font-size: 16px;
+$font-normal: 400;
 
 /* Fonts */
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+
+/* Button */
+%btn {
+	display: inline-block;
+	border-radius: 3px;
+	padding: 7px 12px;
+	border: 1px solid #D5D5D5;
+	background: $cancel-color;
+	font-family: $brand-font;
+	color: #ffffff;
+	touch-action: manipulation;
+	cursor: pointer;
+}
+
+%tab {
+	display: inline-block;
+	//padding: 8px 16px;
+	//margin-bottom: 0;
+	margin: 10px 12px;
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	//border: 1px solid transparent;
+	border-radius: 3px;
+	background: #ffffff;
+	color: $message-reply-color;
+	padding-right: 14px;
+}
