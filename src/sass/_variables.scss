@@ -34,14 +34,13 @@ $logo-font: 'Lobster', cursive;
 	background: $cancel-color;
 	font-family: $brand-font;
 	color: #ffffff;
+	fill: #ffffff;
 	touch-action: manipulation;
 	cursor: pointer;
 }
 
 %tab {
 	display: inline-block;
-	//padding: 8px 16px;
-	//margin-bottom: 0;
 	margin: 10px 12px;
 	font-size: 16px;
 	line-height: 1.25;

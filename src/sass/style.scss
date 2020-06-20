@@ -67,7 +67,7 @@ textarea {
 	outline: none;
 	resize: none;
 	overflow: hidden;
-	width: 125px;
+	width: 250px;
 }
 
 /* Links */
@@ -140,6 +140,7 @@ li {
 .btn--state-orange {
 	@extend %btn;
 	background: $button-orange-color;
+	color: #FFFFFF;
 }
 
 .btn--state-orange:hover {
@@ -202,21 +203,31 @@ li {
 
 /* Tabble */
 
-.table {
+.box__table {
 	display: table;
-	min-width: 800px;
+	min-width: 700px;
 	border-spacing: 2px;
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.table__row {
-	display: table-row;
-	border-bottom: 1px solid #ccc;
+.box__table__button {
+	display: flex;
+	justify-content: center;
+	//max-width: 700px;
+	padding: 30px;
+	//border-bottom: 1px solid $hover-color;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.table__row:hover {
+.box__table__row {
+	display: table-row;
+	border-bottom: 1px solid $hover-color;
+}
+
+.box__table__row:hover {
 	background: $hover-color;
 
 	&:hover .icon-links {
@@ -228,25 +239,60 @@ li {
 	}
 }
 
-.table__cell {
+.box__table__row:first-of-type {
+	border-top: 1px solid $hover-color;
+}
+
+.box__table__cell {
 	display: table-cell;
 }
 
-/* List */
-
-.list {
-	max-width: 800px;
+/*.box__table {
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 }
 
-.list__row {
-	display: inline-flex;
-	min-width: 300px;
-	border-bottom: 1px solid #ccc;
+.box__table__button {
+	display: flex;
+	padding: 30px;
+	border-bottom: 1px solid $hover-color;
+	justify-content: center;
+}
+
+.box__table__row {
+	border-bottom: 1px solid $hover-color;
 	justify-content: space-between;
-	align-items: center;
+	display: flex;
+}
+
+.box__table__row a {
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+}
+
+.box__table__icon {
+	align-items: flex-end;
+}*/
+
+/* List */
+
+.box__list, .box__chart  {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	//display: block;
+	padding: 10px 0 30px 0;
+}
+
+.box__list__row {
+	display: inline-flex;
+	min-width: 250px;
+	border-bottom: 1px solid $hover-color;
+	justify-content: space-between;
+	//align-items: center;
+	line-height: 0;
+	padding-top: 20px;
 }
 
 .second {
@@ -390,15 +436,37 @@ li {
 	padding: 0px 20px;
 }
 
-/* Box */
+/* Box date */
 
 .box__date {
 	display: flex;
+	justify-content: center;
+	padding: 30px;
+	border-bottom: 1px solid $hover-color;
 }
 
 .box__date__cal {
-	width: 250px;
+	width: 320px;
 	border: 1px solid $hover-color;
 	border-radius: 3px;
-	display: inline-block;
+	display: flex;
+}
+
+.box__date__cal svg {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	padding: 8px;
+	fill: $message-reply-color;
+}
+
+.box__date__cal__text {
+	border-left: 1px solid $hover-color;
+}
+
+/* Chart */
+
+.box__chart__tabs {
+	display: flex;
+	justify-content: center;
 }
