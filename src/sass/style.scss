@@ -8,6 +8,7 @@
 @import 'components/links&icons';
 @import 'pages/general';
 @import 'pages/links';
+@import 'pages/details';
 
 
 .topbar ul {
@@ -157,6 +158,11 @@
 
 /* Menu */
 
+.menu ul ul li:nth-last-of-type(5) {
+	display: flex;
+	justify-content: space-around;
+}
+
 .menu__manager img{
 	width: 60px;
 	height: 60px;
@@ -167,17 +173,10 @@
 	z-index: 1;
 }
 
-.menu__manager a {
-	vertical-align: top;
-	padding: 0px 20px;
-}
-
 .menu {
 	width: 100%;
 	height: 80px;
-	//display: flex;
 	background-color: #333;
-
 }
 
 .menu__logo {
@@ -187,10 +186,6 @@
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
-}
-
-.menu__logo__hamburger {
-	//position: relative;
 }
 
 .menu__logo__font {
@@ -204,29 +199,74 @@
 	background: transparent;
 	line-height: 50px;
 	color: $message-reply-color;
-	//margin-right: 20px;
 }
 
 .menu ul ul li {
 	display: block;
-	margin: 0 0 12px 0;
+	margin-bottom: 12px;
+	margin-top: 12px;
 	border-bottom: 1px solid #ccc;
-	//padding: 0;
-	border-left: 10px none transparent;
-
-	&:active {
-		border-left-color: $slider-orange-color;
-	}
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
 }
 
 .menu li ul {
-	//display: none;
+	display: none;
 	width: 100%;
-	//text-align: center;
+	text-align: center;
 	position: absolute;
 	background-color: #333;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.menu ul ul a {
+	padding-left: 12px;
+	font-size: 18px;
+	color: $message-reply-color;
+	font-family: $brand-font;
+	font-weight: bold;
+
+	&:hover {
+		color: #FFFFFF;
+	}
+}
+
+.menu ul ul svg {
+	padding-right: 10px;
+	fill: $message-reply-color;
+	left: auto;
+
+	&:hover {
+		fill: #FFFFFF;
+	}
+}
+
+.menu ul ul ul li {
+	display: block;
+	margin: 0 0 12px 0;
+}
+
+.menu li li ul {
+	display: none;
+	text-align: center;
+	position: inherit;
+	background: #333;
+	padding: 12px 0 0 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu li li:hover ul {
+	display: block;
+}
+
+.topbar li li ul a {
+	color: $hover-color;
+	display: block;
+	padding: 0 24px;
+	border-left: none;
+	border-bottom: 1px solid #ccc;
 }

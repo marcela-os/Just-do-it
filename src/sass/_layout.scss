@@ -61,11 +61,12 @@ body {
 
 @media (max-width: 768px) {
 	.grid {
+		grid-template: main;
 		grid-template-columns: 1fr;
 	}
 
 	.main {
-		grid-area: auto;
+		grid-area: main;
 	}
 
 	.menu {
@@ -73,7 +74,7 @@ body {
 	}
 
 	.top {
-		margin-top: 80px;
+		margin-top: 10px;
 	}
 
 	.topbar {
