@@ -1,0 +1,71 @@
+.btn {
+	@extend %btn;
+}
+
+.btn:hover {
+	background: $message-reply-color;
+}
+
+.btn--state-orange {
+	@extend %btn;
+	background: $button-orange-color;
+	color: #FFFFFF;
+}
+
+.btn--state-orange:hover {
+	background: $slider-orange-color;
+}
+
+.btn--state-danger {
+	@extend %btn;
+	background: $brand-main-color;
+}
+
+.btn--state-danger:hover {
+	background: $neg-notification-dark;
+}
+
+.tab {
+	@extend %tab;
+}
+
+.tab:hover {
+	background: $hover-color;
+	color: $message-reply-color;
+}
+
+.tab--custom-blue {
+	@extend %tab;
+	margin-right: 14px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-color: $link-color;
+	border-radius: 50% /50%;
+	background: $link-color;
+	padding: 0;
+}
+
+.tab--custom-orange {
+	@extend %tab;
+	margin-right: 14px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-color: $button-orange-color;
+	border-radius: 50% /50%;
+	background: $button-orange-color;
+	padding: 0;
+}
+
+.tab--custom-green {
+	@extend %tab;
+	margin-right: 14px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-color: $marked-color;
+	border-radius: 50% /50%;
+	background: $marked-color;
+	padding: 0;
+}

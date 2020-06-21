@@ -1,0 +1,48 @@
+/* Links */
+
+a {
+	font-size: 16px;
+	color: $link-color;
+	font-family: $paragraph-font;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $slider-orange-color;
+}
+
+.link--small {
+	font-size: $paragraph-font-size;
+}
+
+/* Icons */
+
+.label {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.icon-show {
+	fill: $link-color;
+}
+
+.icon-show:hover {
+	fill: $slider-orange-color;
+	cursor: pointer;
+}
+
+.icon-links, .icon-trash {
+	fill: $message-reply-color;
+	opacity: 0;
+}
+
+.icon-links:hover, .icon-trash:hover {
+	fill: $slider-orange-color;
+}
+
+.topbar .label {
+	vertical-align: text-top;
+	fill: $message-reply-color;
+	padding: 0 4px;
+}

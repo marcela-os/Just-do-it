@@ -1,0 +1,56 @@
+/* Box date */
+
+.box__date {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	border-bottom: 1px solid $hover-color;
+}
+
+.box__date__cal {
+	width: 320px;
+	border: 1px solid $hover-color;
+	border-radius: 3px;
+	display: flex;
+}
+
+.box__date__cal svg {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	padding: 8px;
+	fill: $message-reply-color;
+}
+
+.box__date__cal__text {
+	border-left: 1px solid $hover-color;
+}
+
+/* Box list */
+
+.box__list, .box__chart  {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0 30px 0;
+}
+
+.box__list__row {
+	display: inline-flex;
+	min-width: 250px;
+	border-bottom: 1px solid $hover-color;
+	justify-content: space-between;
+	line-height: 0;
+	padding-top: 20px;
+}
+
+.second {
+	float: right;
+}
+
+/* Chart */
+
+.box__chart__tabs {
+	display: flex;
+	justify-content: center;
+}

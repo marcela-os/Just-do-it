@@ -1,0 +1,36 @@
+h1 {
+	font-size: $title-font-size;
+	font-family: $brand-font;
+	color: $hover-color;
+	text-transform: uppercase;
+	border-bottom: 1px solid $hover-color;
+	padding: 6px 6px;
+	margin: 0;
+	font-weight: $font-normal;
+}
+
+h2 {
+	font-size: $paragraph-font-size;
+	color: $message-reply-color;
+	font-family: $brand-font;
+}
+
+h3 {
+	font-size: 14px;
+	color: $message-reply-color;
+	font-family: $brand-font;
+}
+
+p {
+	font-size: $paragraph-font-size;
+	color: $paragraph-color;
+	font-family: $paragraph-font;
+}
+
+/* List */
+
+li {
+	font-size: $paragraph-font-size;
+	color: $message-reply-color;
+	font-family: $paragraph-font;
+}
