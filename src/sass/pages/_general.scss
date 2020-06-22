@@ -7,14 +7,14 @@
 	border-bottom: 1px solid $hover-color;
 }
 
-.box__date__cal {
+.box__date-cal {
 	width: 320px;
 	border: 1px solid $hover-color;
 	border-radius: 3px;
 	display: flex;
 }
 
-.box__date__cal svg {
+.box__date-cal svg {
 	width: 16px;
 	height: 16px;
 	vertical-align: middle;
@@ -22,7 +22,7 @@
 	fill: $message-reply-color;
 }
 
-.box__date__cal__text {
+.box__date-text{
 	border-left: 1px solid $hover-color;
 }
 
@@ -35,7 +35,7 @@
 	padding: 10px 0 30px 0;
 }
 
-.box__list__row {
+.box__list-row {
 	display: inline-flex;
 	min-width: 250px;
 	border-bottom: 1px solid $hover-color;
@@ -50,7 +50,7 @@
 
 /* Chart */
 
-.box__chart__tabs {
+.box__chart-tabs {
 	display: flex;
 	justify-content: center;
 }

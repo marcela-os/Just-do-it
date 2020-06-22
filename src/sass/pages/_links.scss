@@ -9,7 +9,7 @@
 	margin-right: auto;
 }
 
-.box__table__button {
+.box__table-button {
 	display: flex;
 	justify-content: center;
 	padding: 30px;
@@ -17,12 +17,12 @@
 	margin-right: auto;
 }
 
-.box__table__row {
+.box__table-row {
 	display: table-row;
 	border-bottom: 1px solid $hover-color;
 }
 
-.box__table__row:hover {
+.box__table-row:hover {
 	background: $hover-color;
 
 	&:hover .icon-links {
@@ -34,11 +34,11 @@
 	}
 }
 
-.box__table__row:first-of-type {
+.box__table-row:first-of-type {
 	border-top: 1px solid $hover-color;
 }
 
-.box__table__cell {
+.box__table-cell {
 	display: table-cell;
 }
 
