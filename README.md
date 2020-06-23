@@ -1,1 +1,1 @@
-https://marcela-os.github.io/Just-do-it/src/
+https://marcela-os.github.io/Just-do-it/dist/
