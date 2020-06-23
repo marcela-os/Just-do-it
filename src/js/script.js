@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 function toggleMenu(visible) {
 	document.querySelector('.menu__list').classList.toggle('show', visible);
 }

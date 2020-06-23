@@ -15,15 +15,19 @@
 }
 
 .box__date-cal svg {
-	width: 16px;
-	height: 16px;
 	vertical-align: middle;
-	padding: 8px;
+	margin-top: 10px;
 	fill: $message-reply-color;
 }
 
 .box__date-text{
 	border-left: 1px solid $hover-color;
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
 }
 
 /* Box list */
@@ -37,7 +41,6 @@
 
 .box__list-row {
 	display: inline-flex;
-	min-width: 250px;
 	border-bottom: 1px solid $hover-color;
 	justify-content: space-between;
 	line-height: 0;

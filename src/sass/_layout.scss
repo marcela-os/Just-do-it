@@ -24,7 +24,7 @@ body {
 	background-color: #333;
 	position: fixed;
 	width: 300px;
-	overflow-y: scroll;
+	//overflow-y: scroll;
 	height: 100%;
 }
 
@@ -57,9 +57,21 @@ body {
 		display: none;
 	}
 
+	.box__table {
+		min-width: 700px;
+	}
+
+	.box__list-row {
+		min-width: 250px;
+	}
+
+	.box__date-cal svg {
+		width: 16px;
+		height: 16px;
+	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
 	.grid {
 		grid-template: 'main';
 		grid-template-columns: 1fr;
@@ -83,5 +95,80 @@ body {
 
 	.sidebar {
 		display: none;
+	}
+
+	.box__table {
+		min-width: 700px;
+	}
+
+	.box__list, .box__chart {
+		display: grid;
+	}
+
+	.box__date-cal svg {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media (max-width: 425px) {
+	/*.box__table {
+		max-width: 100vw;
+		overflow-x: auto;
+	}
+
+	.box__list-row {
+		max-width: 100vw;
+		overflow-x: auto;
+	}*/
+
+	.grid {
+		grid-template: 'main';
+		grid-template-columns: 1fr;
+	}
+
+	.main {
+		grid-area: main;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.top {
+		margin-top: 10px;
+	}
+
+	.topbar {
+		display: none;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.box__list, .box__chart {
+		display: grid;
+	}
+
+	.box-details {
+		max-width: 100vw;
+		overflow-x: auto;
+	}
+
+	.box__date-cal {
+		height: 40px;
+		width: 420px;
+		justify-content: space-between;
+	}
+
+	.box__date-cal svg {
+		width: 20px;
+		height: 20px;
+		padding-right: 6px;
+	}
+
+	.btn--state-orange {
+		height: 42px;
 	}
 }
